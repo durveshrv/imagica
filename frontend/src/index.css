@@ -1,0 +1,75 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/* Navigation */
+nav {
+  background-color: rgb(72, 3, 136);
+  color: #fff;
+  padding: 1rem 5rem;
+}
+
+.nav__logo {
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/* Delete Button */
+.delete-button {
+  position: absolute;
+  top: 5px; /* Adjust as needed */
+  right: 5px; /* Adjust as needed */
+  background-color: rgb(72, 3, 136); /* Adjust the color as needed */
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+  padding: 5rem;
+  padding-top: 0;
+}
+
+.grid__item {
+  position: relative; /* Ensure the delete button is positioned relative to this container */
+  height: 16rem;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem; /* Add some space between grid items */
+}
+
+.grid__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2rem 5rem;
+}
+
+.button {
+  color: rgb(67, 1, 128);
+  font-size: 60px;
+  height: 65px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 2rem;
+}
